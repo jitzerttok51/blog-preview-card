@@ -17,6 +17,11 @@ html {
     --theme-white: hsl(0, 0%, 100%);
     --theme-gray-500: hsl(0, 0%, 42%);
     --theme-gray-950: hsl(0, 0%, 7%);
+
+    --theme-tag-font: 700 14px/150% 'Figtree';
+    --theme-title-font: 700 24px/150% 'Figtree';
+    --theme-p-font: 500 16px/150% 'Figtree';
+    --theme-ts-font: 500 14px/150% 'Figtree';
 }
 
 body {
@@ -55,17 +60,17 @@ body {
             padding: 4px 12px;
             background-color: var(--theme-yellow);
             width: fit-content;
-            font: bolder 14px/150% 'Figtree';
+            font: var(--theme-tag-font);
             color: var(--theme-gray-950);
         }
     
         .timestamp {
-            font: 500 14px/150% 'Figtree';
+            font: var(--theme-ts-font);
             color: var(--theme-gray-950);
         }
     
         h1 {
-            font: bolder 24px/150% 'Figtree';
+            font: var(--theme-title-font);
             color: var(--theme-gray-950);
         }
 
@@ -76,7 +81,7 @@ body {
     
         p {
             color: var(--theme-gray-500);
-            font: 500 16px/150% 'Figtree';
+            font: var(--theme-p-font);
         }
     }
 
@@ -90,7 +95,7 @@ body {
         }
 
         h1 {
-            font: bolder 14px/150% 'Figtree';
+            font: var(--theme-tag-font);
             color: var(--theme-gray-950);
         }
     }
