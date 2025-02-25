@@ -1,0 +1,97 @@
+@import url(assets/fonts/Figtree-VariableFont_wght.ttf);
+@import url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    --theme-yellow: hsl(47, 88%, 63%);
+    --theme-white: hsl(0, 0%, 100%);
+    --theme-gray-500: hsl(0, 0%, 42%);
+    --theme-gray-950: hsl(0, 0%, 7%);
+}
+
+body {
+    background-color: var(--theme-yellow);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--theme-white);
+    width: 384px;
+    padding: 24px;
+    border-radius: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    outline: 1px solid var(--theme-gray-950);
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 1.0);
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    
+        .tag {
+            padding: 4px 12px;
+            background-color: var(--theme-yellow);
+            width: fit-content;
+            font: bolder 14px/150% 'Figtree';
+            color: var(--theme-gray-950);
+        }
+    
+        .timestamp {
+            font: 500 14px/150% 'Figtree';
+            color: var(--theme-gray-950);
+        }
+    
+        h1 {
+            font: bolder 24px/150% 'Figtree';
+            color: var(--theme-gray-950);
+        }
+
+        h1:hover {
+            cursor: pointer;
+            color: var(--theme-yellow);
+        }
+    
+        p {
+            color: var(--theme-gray-500);
+            font: 500 16px/150% 'Figtree';
+        }
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        img {
+            width: 32px;
+            height: 32px;
+        }
+
+        h1 {
+            font: bolder 14px/150% 'Figtree';
+            color: var(--theme-gray-950);
+        }
+    }
+}
