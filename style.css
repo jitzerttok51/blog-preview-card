@@ -18,8 +18,8 @@ html {
     --theme-gray-500: hsl(0, 0%, 42%);
     --theme-gray-950: hsl(0, 0%, 7%);
 
-    --theme-tag-font: 700 14px/150% 'Figtree';
-    --theme-title-font: 700 24px/150% 'Figtree';
+    --theme-tag-font: 800 14px/150% 'Figtree';
+    --theme-title-font: 800 24px/150% 'Figtree';
     --theme-p-font: 500 16px/150% 'Figtree';
     --theme-ts-font: 500 14px/150% 'Figtree';
 }
